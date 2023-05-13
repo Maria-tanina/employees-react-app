@@ -4,6 +4,7 @@ import SearchPanel from '../search-panel/search-panel';
 import AppFilter from '../app-filter/app-filter';
 import EmployeesList from '../employees-list/employees-list';
 import EmployeesAddForm from '../employees-add-form/employees-add-form';
+import Counter from '../counter/Counter';
 import './app.css';
 
 
@@ -102,7 +103,7 @@ class App extends Component {
                     onToggleProp={this.onToggleProp}/>
                 <EmployeesAddForm
                     onAdd={this.addItem}/>
-               
+                <Counter count={10}/>
             </div>
         )
     }
